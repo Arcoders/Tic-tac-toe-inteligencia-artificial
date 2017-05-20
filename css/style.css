@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+body{
+  font-size: 16px;
+  font-family: 'Courgette', cursive;
+  color: #424242;
+  background-color: lavender;
+}
+
+#content{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#game{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#game h1{
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+}
+
+#content_board{
+  text-align: center;
+}
+
+#content_board .row{
+  width: auto;
+  position: relative;
+  padding: 3px 0 0 3px;
+}
+
+#content_board .row .cell{
+  padding: 0px;
+  border: 2px solid #424242;
+  margin: 3px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: inset 0 0 5px #424242,
+              inset 0 0 2px #424242,
+              inset 0 0 30px #424242;
+  display: inline-block;
+  position: relative;
+  border-radius: 20%;
+}
+
+#content_board .row .cell:hover{
+  box-shadow: inset 0 0 2px #494949,
+              inset 0 0 10px #494949,
+              inset 0 0 10px #494949;
+  cursor: pointer;
+}
+
+#content_board .row .cell img{
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+}
